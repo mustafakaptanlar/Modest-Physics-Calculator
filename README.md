@@ -1,4 +1,4 @@
-# Modest-Physics-Calculator
+# Modest Physics Calculator
 A physics calculator which includes currently;
 
   *Average Speed
