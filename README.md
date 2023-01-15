@@ -5,10 +5,10 @@ A physics calculator which includes currently;
   
   *Acceleration Formula
     
-  *Density
+  *Density Formula
   
-  *Newton's Second Law
+  *Newton's Second Law (Force) Formula
     
-  *Power
+  *Power Formula
     
-  *Weight
+  *Weight Formula
