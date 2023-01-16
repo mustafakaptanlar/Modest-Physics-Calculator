@@ -1,6 +1,6 @@
 import subprocess #import library
 
-choice = input("What you want to calculate : ") #user choices which calculation he/she wants to do.
+choice = input("What you want to calculate : ").casefold() #user choices which calculation he/she wants to do.
 
 
 if choice == "average speed":
@@ -16,10 +16,10 @@ if choice == "power":
 if choice == "weight":
     subprocess.call(["python", "Formulas/Weight.py"]) #Calls Weight Formula
 if choice == "pressure":
-    subprocess.call(["python", "Formulas/Pressure.py"]) #Calls Weight Formula
+    subprocess.call(["python", "Formulas/Pressure.py"]) #Calls Pressure Formula
 if choice == "kinetic energy":
-    subprocess.call(["python", "Formulas/Kinetic Energy.py"]) #Calls Weight Formula
+    subprocess.call(["python", "Formulas/Kinetic Energy.py"]) #Calls Kinetic Energy Formula
 if choice == "ohm's law":
-    subprocess.call(["python", "Formulas/Ohm's Law.py"]) #Calls Weight Formula
+    subprocess.call(["python", "Formulas/Ohm's Law.py"]) #Calls Ohm's Law Formula
 if choice == "frequency":
-    subprocess.call(["python", "Formulas/Frequency.py"]) #Calls Weight Formula
+    subprocess.call(["python", "Formulas/Frequency.py"]) #Calls Frequency Formula
