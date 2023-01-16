@@ -14,4 +14,6 @@ A physics calculator which includes currently;
   *Weight Formula
   
   *Pressure Formula
+  
+  *Kinetic Energy Formula
 
