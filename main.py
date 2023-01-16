@@ -1,25 +1,21 @@
-import subprocess #import library
+formulas = {
+    'average speed': 'Average Speed.py',
+    'acceleration': 'Acceleration.py',
+    'density': 'Density.py',
+    'force': "Newton's Second Law.py",
+    'power': 'Power.py',
+    'weight': 'Weight.py',
+    'pressure': 'Pressure.py',
+    'kinetic energy': 'Kinetic Energy.py',
+    "ohm's law": "Ohm's Law.py",
+    'frequency': 'Frequency.py'
+}
 
-choice = input("What you want to calculate : ").casefold() #user choices which calculation he/she wants to do.
-
-
-if choice == "average speed":
-    subprocess.call(["python", "Formulas/Average Speed.py"]) #Calls Average Speed Formula
-if choice == "acceleration":
-    subprocess.call(["python", "Formulas/Acceleration.py"]) #Calls Acceleration Formula
- if choice == "density":
-    subprocess.call(["python", "Formulas/Density.py"]) #Calls Density Formula
-if choice == "force":
-    subprocess.call(["python", "Formulas/Newton's Second Law.py"]) #Calls Weight Formula
-if choice == "power":
-    subprocess.call(["python", "Formulas/Power.py"]) #Calls Power Formula
-if choice == "weight":
-    subprocess.call(["python", "Formulas/Weight.py"]) #Calls Weight Formula
-if choice == "pressure":
-    subprocess.call(["python", "Formulas/Pressure.py"]) #Calls Pressure Formula
-if choice == "kinetic energy":
-    subprocess.call(["python", "Formulas/Kinetic Energy.py"]) #Calls Kinetic Energy Formula
-if choice == "ohm's law":
-    subprocess.call(["python", "Formulas/Ohm's Law.py"]) #Calls Ohm's Law Formula
-if choice == "frequency":
-    subprocess.call(["python", "Formulas/Frequency.py"]) #Calls Frequency Formula
+while True:
+    choice = input("What you want to calculate, or enter 'exit' to quit: ").casefold()
+    if choice == 'exit':
+        break
+    try:
+        exec(open(f"Formulas/{formulas[choice]}").read())
+    except KeyError:
+        print("Invalid choice. Please select a valid formula.")
