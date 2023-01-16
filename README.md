@@ -16,4 +16,8 @@ A physics calculator which includes currently;
   *Pressure Formula
   
   *Kinetic Energy Formula
+  
+  *Ohm's Law Formula
+  
+  *Frequency Formula
 
