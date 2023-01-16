@@ -12,3 +12,6 @@ A physics calculator which includes currently;
   *Power Formula
     
   *Weight Formula
+  
+  *Pressure Formula
+
